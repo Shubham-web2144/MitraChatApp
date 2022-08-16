@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitra - A Chat Friend</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/userList.css" />
+    <link rel="stylesheet" href="../css/groupForm.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img src="../images/logo_1.png" alt="" class="header__img" />
+      </div>
+      <section class="search">
+        <div class="search__txt">
+          <a href="./userHome.php" class="backBtn">Back</a>
+          <h3>Select group to chat</h3>
+        </div>
+        <!-- <div class="search__box">
+          <form action="">
+            <input type="text" placeholder="Search group...." name="search" />
+            <button type="submit">O</button>
+          </form>
+        </div> -->
+      </section>
+      <section class="users" id="groupBox">
+        <!-- <a href="#" class="user__card">
+          <img src="../php/uploadedImg/1651596360bannerCode.png" alt="" class="user__card-img" />
+          <h3>gujman carla</h3>
+          <span>active now</span>
+        </a> -->
+      </section>
+      <button class="groupFormBtn">+</button>
+      <!--icon-->
+      <form action="" method="" class="groupForm" autocomplete="off" enctype="multipart/form-data">
+        <h3>Create Chat Room</h3>
+        <div class="errorBox">This is error box !!!</div>
+        <div class="groupForm__input">
+            <span>Chat Room Title</span>
+            <input type="text" name="groupname" placeholder="Enter group name" />
+        </div>
+        <div class="groupForm__input">
+            <span>Select Image</span>
+            <input type="file" name="groupImg" />
+        </div>
+        <div class="groupForm__input">
+            <span>Chat Room Bio</span>
+            <input type="text" name="groupBio" placeholder="Enter group bio"/>
+        </div>
+        <button type="submit" id="groupBtn">Create Group</button>
+      </form>
+    </div>
+
+    <script>
+      const groupFormBtn = document.querySelector(".groupFormBtn");
+      const groupForm = document.querySelector(".groupForm");
+
+      groupFormBtn.addEventListener("click", () => {
+        groupForm.classList.toggle("active");
+      });
+    </script>
+    <script src="../javascript/createGroup.js"></script>
+    <script src="../javascript/getGroupList.js"></script>
+    <script src="../javascript/search.js"></script>
+  </body>
+</html>

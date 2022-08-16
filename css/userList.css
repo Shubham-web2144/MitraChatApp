@@ -1,0 +1,136 @@
+.search {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000046;
+    box-shadow: 0px 7px 7px rgb(0 0 0 / 10%);
+    z-index: 10;
+}
+.search__txt {
+    margin-left: 50px;
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+}
+.search__txt h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000046;
+}
+.backBtn {
+    margin-right: 30px;
+    color: #0575e6;
+    text-decoration: none;
+    font-size: 19px;
+}
+.search__box {
+    position: relative;
+    margin-right: 40px;
+}
+.search__box form {
+    position: relative;
+}
+.search__box form input {
+    width: 300px;
+    height: 43px;
+    padding: 8px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    color: #000046;
+}
+.search__box form input:focus {
+    border: 2px solid #0575e6;
+}
+.search__box form button {
+    width: 42px;
+    height: 42px;
+    padding: 7px 0px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #000046;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.users, .searchResult {
+    position: relative;
+    width: 100%;
+    height: 74%;
+    padding: 24px 30px;
+    background-color: #fff;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.user::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}
+.user__card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+    margin-top: 20px;
+}
+.searchResult {
+    position: absolute !important;
+}
+.user__card:hover {
+    transform: scale(1.03);
+}
+.user__card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid green;
+    padding: 5px 5px;
+    margin: 14px 0px;
+}
+.active {
+    border: 3px solid gray !important;
+}
+.user__card h3 {
+    font-weight: 700;
+    color: #000046;
+    text-transform: capitalize;
+}
+.user__card span {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 650;
+    margin-top: 6px;
+    color: #000046;
+}
+.createGroupBtn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #0575e6, #021b79);
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+Next task is :
+
+    1) Last msg showing - pending
+    2) creating group btn
+    3) msg alert or notification on new msg
+    4) send email when user reg
+    5) send email when new msg arrive when user offline
+    6) group search
+    7) icon pasting
+
+
+    Last work is icons and images uplodes*****
+
+    CREATE TABLE `mitra`.`groupmsg` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `group_id` INT(20) NOT NULL , `user_id` INT(20) NOT NULL , `msg` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

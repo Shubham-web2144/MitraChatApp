@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitra - A Chat Friend</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/loginPage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="header">
+        <img src="../images/logo_1.png" alt="" class="header__img" />
+      </div> -->
+      <section class="login">
+        <div class="login__txt">
+          <img src="../images/logo1.png" alt="" class="login__txt-img" />
+          <div class="login__txt-txt">
+            <h1>Hello Mitra...</h1>
+            <p>
+              Are you ready to experience, meet and chat with mitra
+              <br />
+              Let's sign up now
+            </p>
+          </div>
+        </div>
+        <div class="login__form">
+          <h2 style="margin-top: 40px">sign up to continue</h2>
+          <form action="" class="login__form-form" autocomplete="off" enctype="multipart/form-data">
+            <div class="errorBox">This is error box !!!</div>
+            <div class="login__form-inputBox">
+              <span class="material-icons icns"> person_outline </span>
+              <input type="text" placeholder="Enter your full name" name="name" />
+            </div>
+            <div class="login__form-inputBox">
+              <span class="material-icons icns"> alternate_email </span>
+              <input type="text" placeholder="Enter your email id" name="email" />
+            </div>
+            <div
+              class="login__form-inputBox"
+              style="flex-direction: column; align-items: flex-start"
+            >
+              <span>Select Image</span>
+              <input type="file" placeholder="" name="image"/>
+            </div>
+            <div class="login__form-inputBox">
+              <span class="material-icons icns"> lock </span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                class="inputPass"
+                name="password"
+              />
+              <span class="material-icons eyeBtn"> visibility </span>
+            </div>
+            <div class="login__form-btn">
+              <button type="submit">Sign up</button>
+            </div>
+          </form>
+          <p>Already have account? Log in now</p>
+          <div class="signup__form-btn">
+            <button onclick="visitLog();">log in</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../javascript/loaderScreen.js"></script>
+    <script src="../javascript/signup.js"></script>
+    <script>
+      const visitLog = () => {
+        window.location.href = "./loginPage.html";
+      };
+    </script>
+  </body>
+</html>

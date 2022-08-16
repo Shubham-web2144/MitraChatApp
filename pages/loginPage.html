@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitra - A Chat Friend</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/loginPage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="header">
+        <img src="../images/logo_1.png" alt="" class="header__img" />
+      </div> -->
+      <section class="login">
+        <div class="login__txt">
+          <img src="../images/logo1.png" alt="" class="login__txt-img" />
+          <div class="login__txt-txt">
+            <h1>Welcome Back Mitra...</h1>
+            <p>
+              To keep connected with your freinds,
+              <br />
+              Let's login now
+            </p>
+          </div>
+        </div>
+        <div class="login__form" style="margin-top: 30px">
+          <h2>Log in to continue</h2>
+          <form action="" class="login__form-form" autocomplete="off">
+            <div class="errorBox">This is error box !!!</div>
+            <div class="login__form-inputBox">
+              <span class="material-icons icns"> alternate_email </span>
+              <input type="text" placeholder="Enter your email id" name="email"/>
+            </div>
+            <div class="login__form-inputBox">
+              <span class="material-icons icns"> lock </span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                class="inputPass"
+                name="password"
+              />
+              <span class="material-icons eyeBtn"> visibility </span>
+            </div>
+            <div class="login__form-btn">
+              <button type="submit">Log in</button>
+            </div>
+          </form>
+          <p>New to here? Sign up now</p>
+          <div class="signup__form-btn" style="margin-bottom: 0px">
+            <button onclick="visitSign();">Sign up</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const visitSign = () => {
+        window.location.href = "./signupPage.html";
+      };
+    </script>
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/loaderScreen.js"></script>
+  </body>
+</html>

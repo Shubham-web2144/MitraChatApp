@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitra - A Chat Friend</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="../images/logo_1.png" alt="" class="header__img" />
+            <a href="../pages/userHome.php"><span class="material-icons" style="font-size: 28px; color: rgb(52, 111, 228)">
+                arrow_forward
+                </span></a>
+
+          </div>
+          <div class="contact">
+              <div class="contactBox">
+                  <div class="contactBox__img">
+                      <img src="../images/5124556.jpg" alt="">
+                  </div>
+                  <form action="" class="contactBox__form" autocomplete="off">
+                      <h1>Contact Us</h1>
+                      <input type="text" name="name" class="contact__form-input" placeholder="Enter your name" />
+                      <input type="text" name="email" class="contact__form-input" placeholder="Enter your email" />
+                      <textarea name="msg" id="" cols="30" rows="10" class="contact__form-textarea" placeholder="Enter your message..."></textarea>
+                      <button class="contactBox-btn" type="submit">Submit</button>
+                  </form>
+              </div>
+              <div class="contactInfo">
+                  <div class="contactInfo__box">
+                    <span class="material-icons">
+                        pin_drop
+                        </span>
+                      <h4>Address</h4>
+                      <h5>Aurangabad, Maharashtra India</h5>
+                  </div>
+                  <div class="contactInfo__box">
+                    <span class="material-icons">
+                        pin_drop
+                        </span>
+                      <h4>Email</h4>
+                      <h5>abcd@mail.com</h5>
+                  </div>
+                  <div class="contactInfo__box">
+                    <span class="material-icons">
+                        mail
+                        </span>
+                      <h4>Address</h4>
+                      <h5>Aurangabad, Maharashtra India</h5>
+                  </div>
+                  <div class="contactInfo__box">
+                    <span class="material-icons">
+                        call
+                        </span>
+                      <h4>Phone</h4>
+                      <h5>+91-7517848143</h5>
+                  </div>
+              </div>
+              <div class="alertBox">
+                <span class="material-icons">
+                check_circle
+                </span>
+                  <h2>Thank You!!</h2>
+                  <h5>We will contact and solve your query soon.</h5>
+                  <button class="alertBox_btn">Close</button>
+              </div>
+          </div>
+    </div>
+    <script>
+        const alertBoxBtn = document.querySelector('.alertBox_btn');
+        const alertBox = document.querySelector('.alertBox');
+        alertBoxBtn.addEventListener('click', () => {
+            alertBox.style.visibility = "hidden";
+        }) 
+    </script>
+    <script src="../javascript/contact.js"></script>
+</body>
+</html>
